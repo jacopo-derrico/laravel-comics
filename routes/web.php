@@ -18,7 +18,11 @@ use App\Http\Controllers\Home\WelcomeController as WelcomeController;
 Route::get('/', function () {
 
     $menus = config('menus');
-    return view('layouts.app', compact('menus'));
+    $comicsMenus = config('comicsMenus');
+    $shopMenus = config('shopMenus');
+    $dcMenu = config('dcmenu');
+    $sitesMenu = config('sitesMenus');
+    return view('layouts.app', compact('menus', 'comicsMenus', 'shopMenus', 'dcMenu', 'sitesMenu'));
 })->name('homePage');
 
 
