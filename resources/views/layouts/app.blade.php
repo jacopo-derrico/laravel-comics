@@ -19,7 +19,7 @@
         @include('partials.header')
 
         {{-- main --}}
-        @yield('name')
+        @yield('content')
 
         {{-- footer --}}
         @include('partials.footer')

@@ -22,7 +22,9 @@ Route::get('/', function () {
     $shopMenus = config('shopMenus');
     $dcMenu = config('dcmenu');
     $sitesMenu = config('sitesMenus');
-    return view('layouts.app', compact('menus', 'comicsMenus', 'shopMenus', 'dcMenu', 'sitesMenu'));
+
+    $currentSeries = config('comics');
+    return view('pages.comics', compact('menus', 'comicsMenus', 'shopMenus', 'dcMenu', 'sitesMenu', 'currentSeries'));
 })->name('homePage');
 
 
