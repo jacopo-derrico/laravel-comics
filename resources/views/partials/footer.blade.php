@@ -56,3 +56,26 @@
         <img src="{{ asset('img/dc-logo-bg.png') }}" alt="dc logo">
     </figure>
 </footer>
+
+<div id="underFooter">
+    <div class="container">
+
+        <div>
+            <button>Sign-up now!</button>
+        </div>
+        <div class="socials">
+
+            <h3>Follow us</h3>
+            <ul>
+                @foreach ($socialIcons as $icon)
+                    <li>
+                        <a href="{{ $icon['link'] }}" class="capitalize">
+                            <img src="img/<?php echo $icon['icon']; ?>" alt="Social Icon" width="30">
+                        </a>
+                    </li>
+                    @endforeach
+            </ul>
+        </div>
+
+    </div>
+</div>
