@@ -5,7 +5,7 @@
             'link' => '#'
         ],
         [
-            'name' => 'privacy policy (new)',
+            'name' => 'privacy policy',
             'link' => '#'
         ],
         [
