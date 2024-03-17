@@ -124,3 +124,42 @@ header {
         padding-top: 0.3rem;
     }
 }
+
+//Footer stytle
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-block: 40px;
+    overflow: hidden;
+
+
+    .container {
+        justify-content: start;
+        gap: 20px;
+    }
+
+    h4 {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        margin-bottom: 10px;
+
+        a {
+            color: gray;
+            font-size: 12px;
+        }
+    }
+
+    .floating-logo {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 10%;
+    }
+}

@@ -1,6 +1,6 @@
 <header class="flex col-10">
     <figure>
-        <img src="../assets/img/dc-logo.png" alt="DC logo">
+        <img src="{{ asset('img/dc-logo.png') }}" alt="DC logo">
     </figure>
 
     <nav class="h-100">
