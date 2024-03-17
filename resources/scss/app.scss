@@ -229,3 +229,38 @@ button {
     color: white;
     margin-bottom: 30px;
 }
+
+#bannerLink {
+    background-color: $brand_primary;
+    height: 150px;
+
+    nav {
+        ul {
+            margin-block: 50px;
+            justify-content: space-around;
+    
+            li {
+                figure {
+                    width: 50px;
+                }
+    
+                img {
+                    object-fit: cover;
+                }
+    
+                a {
+                    color: white;
+                    margin-left: 25px;
+                }
+            }
+    
+            li:nth-child(1), li:nth-child(4) figure{
+                height: 50px;
+            }
+            li:nth-child(1), li:nth-child(4) figure img{ 
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -22,5 +22,21 @@
                 <button class="uppercase">load more</button>
             </div>
         </div>
+
+        <div id="bannerLink">
+            <nav class="h-100 col-10 m-center flex align-center">
+                <ul class="flex h-100 w-100 align-center m-center">
+                    @foreach ($bannerLink as $link)
+                        <li class="h-100 flex align-center">
+                            <figure>
+                                <img src="img/<?php echo $link['image']; ?>">
+                            </figure>
+                            <a href="{{ $link['link'] }}" class="uppercase">{{ $link['name'] }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </nav>
+        </div>
     </main>
 @endsection
